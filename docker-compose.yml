@@ -1,0 +1,16 @@
+version: '2'
+services:
+  redis:
+    image: redis
+  sinatra-post-to-redis:
+    build: https://github.com/onlyoffice-testing-robot/sinatra-post-to-redis.git
+    ports:
+      - '8008:80'
+    links:
+      - redis
+  redis-to-telegram:
+    tty: true
+    build: .
+    links:
+      - redis
+
