@@ -13,7 +13,7 @@ module RedisToTelegram
 
     # @param redis [Redis] from which fetch data
     def fetch(redis)
-      data = redis.lpop('sinatra_commands')
+      data = redis.rpop('sinatra_commands')
       return self if data.nil?
       parsed = JSON.parse(data)
       @text = parsed['notification']
