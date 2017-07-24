@@ -8,9 +8,11 @@ services:
       - '8008:80'
     links:
       - redis
+    restart: always
   redis-to-telegram:
     tty: true
     build: .
     links:
       - redis
+    restart: always
 
