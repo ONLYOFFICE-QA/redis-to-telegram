@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RedisToTelegram
   # Helper for message
   module MessageHelper

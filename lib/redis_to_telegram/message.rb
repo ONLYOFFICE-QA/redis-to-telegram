@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'redis'
 require_relative 'message/message_helper'
 

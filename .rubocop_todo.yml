@@ -5,16 +5,3 @@
 # one by one as the offenses are removed from the code base.
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
-
-# Offense count: 6
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: always, never
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - 'Gemfile'
-    - 'lib/redis_to_telegram.rb'
-    - 'lib/redis_to_telegram/config_helper.rb'
-    - 'lib/redis_to_telegram/message.rb'
-    - 'lib/redis_to_telegram/message/message_helper.rb'
-    - 'redis_to_telegram.rb'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'telegram/bot'
 require_relative 'lib/redis_to_telegram'
 
