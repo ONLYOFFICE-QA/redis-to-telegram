@@ -15,6 +15,7 @@ module RedisToTelegram
     def fetch(redis)
       data = redis.rpop('sinatra_commands')
       return self if data.nil?
+
       parsed = JSON.parse(data)
       @text = parsed['notification']
       @chat_id = fetch_chat_id(parsed['chat'])
@@ -26,6 +27,7 @@ module RedisToTelegram
     def ready_to_send?
       return false if text.nil?
       return false if chat_id.nil?
+
       true
     end
 
