@@ -17,7 +17,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ice_nine (0.11.2)
     inflecto (0.0.2)
-    iniparse (1.4.4)
+    iniparse (1.5.0)
     jaro_winkler (1.5.4)
     multipart-post (2.1.1)
     overcommit (0.52.1)
