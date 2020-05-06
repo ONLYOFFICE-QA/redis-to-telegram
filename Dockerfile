@@ -5,4 +5,4 @@ WORKDIR /root/redis-to-telegram
 RUN bundle config set without 'development test'
 RUN bundle install
 EXPOSE 80
-CMD bash -c "REDIS=redis ruby redis_to_telegram.rb"
+CMD REDIS=redis ruby redis_to_telegram.rb
