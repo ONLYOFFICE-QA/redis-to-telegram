@@ -7,6 +7,7 @@
 * Use `alpine` as base image
 * Use `bundle config` to not install extra gems
 * Add `markdownlint` check to CI
+* Add `rubocop` check to CI
 
 ### Fixes
 
