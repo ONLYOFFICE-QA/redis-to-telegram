@@ -22,3 +22,8 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
         bundle exec rspec
+    - uses: actions/setup-node@v1
+    - name: markdownlint check
+      run: |
+        npm install -g markdownlint-cli
+        markdownlint *.md
