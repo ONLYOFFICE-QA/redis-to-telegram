@@ -8,6 +8,7 @@
 * Use `bundle config` to not install extra gems
 * Add `markdownlint` check to CI
 * Add `rubocop` check to CI
+* Add `dependabot` config
 
 ### Fixes
 
