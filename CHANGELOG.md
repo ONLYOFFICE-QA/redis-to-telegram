@@ -10,3 +10,7 @@
 ### Fixes
 
 * Do not call `bash` in Dockerfile CMD
+
+### Changes
+
+* Use GitHub Actions instead of TravisCI
