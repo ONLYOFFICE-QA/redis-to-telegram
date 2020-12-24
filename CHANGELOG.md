@@ -17,3 +17,4 @@
 ### Changes
 
 * Use GitHub Actions instead of TravisCI
+* Use `onlyofficeqa/sinatra-post-to-redis` image instead of building from source
