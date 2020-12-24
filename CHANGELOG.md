@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## 1.0.0 (2020-12-24)
+
 ### New features
 
 * Use `alpine` as base image
