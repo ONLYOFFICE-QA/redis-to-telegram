@@ -4,7 +4,7 @@ services:
     image: redis
     restart: always
   sinatra-post-to-redis:
-    build: https://github.com/onlyoffice-testing-robot/sinatra-post-to-redis.git
+    image: onlyofficeqa/sinatra-post-to-redis
     ports:
       - '8008:80'
     links:
