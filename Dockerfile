@@ -1,4 +1,4 @@
-FROM ruby:3.0.0-alpine
+FROM ruby:3.0.2-alpine
 
 COPY . /root/redis-to-telegram
 WORKDIR /root/redis-to-telegram

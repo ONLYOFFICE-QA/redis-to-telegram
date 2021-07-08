@@ -5,6 +5,7 @@
 ### New Features
 
 * Add `dependabot` support for Docker base image
+* Update base image and tests to ruby 3.0.2
 
 ## 1.0.0 (2020-12-24)
 
