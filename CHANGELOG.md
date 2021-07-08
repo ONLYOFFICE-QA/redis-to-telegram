@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### New Features
+
+* Add `dependabot` support for Docker base image
+
 ## 1.0.0 (2020-12-24)
 
 ### New features
