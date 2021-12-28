@@ -6,6 +6,11 @@
 
 * Add `dependabot` support for Docker base image
 * Update base image and tests to ruby 3.0.2
+* Add `ruby-3.1` to CI
+
+### Changes
+
+* Remove `ruby-2.7` fro CI
 
 ## 1.0.0 (2020-12-24)
 
