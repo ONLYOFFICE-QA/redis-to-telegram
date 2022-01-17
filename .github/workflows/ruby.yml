@@ -18,7 +18,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
     - name: Start Redis
-      uses: supercharge/redis-github-action@1
+      uses: supercharge/redis-github-action@1.4.0
     - name: Build and test with Rake
       run: |
         gem install bundler
