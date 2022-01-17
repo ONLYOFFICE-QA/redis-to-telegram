@@ -9,6 +9,7 @@
 * Add `ruby-3.1` to CI
 * Send all messages in queue instantly
   (Fix [#24](https://github.com/ONLYOFFICE-QA/redis-to-telegram/issues/24))
+* Add basic spec suite
 
 ### Changes
 
