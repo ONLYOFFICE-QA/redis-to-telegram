@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'json'
 require 'redis_to_telegram'
 
 RSpec.configure do |config|
@@ -12,4 +13,9 @@ RSpec.configure do |config|
   end
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
+end
+
+# Push data to redis
+def push_message_to_redis(data)
+  Redis.new.lpush('sinatra_commands', data.to_json)
 end
