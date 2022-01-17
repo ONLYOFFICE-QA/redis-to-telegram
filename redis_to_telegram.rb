@@ -12,11 +12,12 @@ module RedisToTelegram
     loop do
       sleep 30
       message = Message.new.fetch(redis)
-      next unless message.ready_to_send?
-
-      bot.api.send_message(chat_id: message.chat_id,
-                           text: message.text)
-      bot.logger.info("Message send: #{message}")
+      while message.ready_to_send?
+        bot.api.send_message(chat_id: message.chat_id,
+                             text: message.text)
+        bot.logger.info("Message send: #{message}")
+        message = Message.new.fetch(redis)
+      end
     end
   end
 end
