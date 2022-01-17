@@ -29,7 +29,7 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
     - name: Build and test with Rake
       env:
-        REDIS: $REDIS_HOST
+        REDIS: REDIS_HOST
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
