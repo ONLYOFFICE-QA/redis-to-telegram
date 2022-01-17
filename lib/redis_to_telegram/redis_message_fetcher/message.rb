@@ -1,27 +1,18 @@
 # frozen_string_literal: true
 
 require 'redis'
-require_relative 'message/message_helper'
 
 module RedisToTelegram
   # Stuff for Message
   class Message
-    include MessageHelper
-
     # @return [String] chat message
-    attr_accessor :text
+    attr_reader :text
     # @return [Integer] chat id to send message
-    attr_accessor :chat_id
+    attr_reader :chat_id
 
-    # @param redis [Redis] from which fetch data
-    def fetch(redis)
-      data = redis.rpop('sinatra_commands')
-      return self if data.nil?
-
-      parsed = JSON.parse(data)
-      @text = parsed['notification']
-      @chat_id = fetch_chat_id(parsed['chat'])
-      self
+    def initialize(text, chat_id)
+      @text = text
+      @chat_id = chat_id
     end
 
     # Check if message ready to send

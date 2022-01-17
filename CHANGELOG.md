@@ -7,6 +7,8 @@
 * Add `dependabot` support for Docker base image
 * Update base image and tests to ruby 3.0.2
 * Add `ruby-3.1` to CI
+* Send all messages in queue instantly
+  (Fix [#24](https://github.com/ONLYOFFICE-QA/redis-to-telegram/issues/24))
 
 ### Changes
 
