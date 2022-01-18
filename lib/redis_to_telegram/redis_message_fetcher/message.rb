@@ -15,6 +15,13 @@ module RedisToTelegram
       @chat_id = chat_id
     end
 
+    # @param [Message] other to compare
+    # @return [Boolean] result of compare
+    def ==(other)
+      @text == other.text &&
+        @chat_id == other.chat_id
+    end
+
     # Check if message ready to send
     # @return [True, False]
     def ready_to_send?
