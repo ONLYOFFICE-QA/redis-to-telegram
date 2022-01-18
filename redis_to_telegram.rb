@@ -5,9 +5,10 @@ require_relative 'lib/redis_to_telegram'
 
 # App to send telegram messages
 module RedisToTelegram
-  redis_message_fetcher = RedisMessageFetcher.new
+  config = ConfigHelper.new
+  redis_message_fetcher = RedisMessageFetcher.new(config: config)
 
-  Telegram::Bot::Client.run(ConfigHelper.config['telegram_bot_token'],
+  Telegram::Bot::Client.run(config['telegram_bot_token'],
                             logger: Logger.new($stdout)) do |bot|
     loop do
       sleep 30

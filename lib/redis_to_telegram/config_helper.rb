@@ -5,8 +5,13 @@ require 'yaml'
 module RedisToTelegram
   # Class for work with config
   class ConfigHelper
-    def self.config
-      YAML.load_file('config.yml')
+    def initialize(path = 'config.yml')
+      @path = path
+    end
+
+    # @return [Hash] Parsed config data
+    def config
+      YAML.load_file(@path)
     end
   end
 end
