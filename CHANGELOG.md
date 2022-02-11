@@ -11,6 +11,7 @@
   (Fix [#24](https://github.com/ONLYOFFICE-QA/redis-to-telegram/issues/24))
 * Add basic spec suite with 100% coverage
 * Check in CI that 100% code is covered with tests
+* Add `yamllint` check in CI
 
 ### Fixes
 
