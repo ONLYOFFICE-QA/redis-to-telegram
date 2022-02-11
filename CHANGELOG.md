@@ -20,6 +20,7 @@
 ### Changes
 
 * Remove `ruby-2.7` fro CI
+* Check `dependabot` at 8:00 Moscow time daily
 
 ## 1.0.0 (2020-12-24)
 
