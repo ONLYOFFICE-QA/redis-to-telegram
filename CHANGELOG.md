@@ -12,6 +12,10 @@
 * Add basic spec suite with 100% coverage
 * Check in CI that 100% code is covered with tests
 
+### Fixes
+
+* Fix `markdownlint` failure because of old `nodejs` in CI
+
 ### Changes
 
 * Remove `ruby-2.7` fro CI
