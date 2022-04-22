@@ -5,7 +5,7 @@ require_relative 'redis_message_fetcher/message'
 module RedisToTelegram
   # Code to fetch message data from Redis
   class RedisMessageFetcher
-    def initialize(host: ENV['REDIS'], config: ConfigHelper.new)
+    def initialize(host: ENV.fetch('REDIS', 'localhost'), config: ConfigHelper.new)
       @redis = Redis.new(host: host)
       @config = config
     end
