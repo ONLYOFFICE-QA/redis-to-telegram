@@ -21,6 +21,7 @@
 
 * Remove `ruby-2.7` fro CI
 * Check `dependabot` at 8:00 Moscow time daily
+* Fix `rubocop-1.28.1` code issues
 
 ## 1.0.0 (2020-12-24)
 
