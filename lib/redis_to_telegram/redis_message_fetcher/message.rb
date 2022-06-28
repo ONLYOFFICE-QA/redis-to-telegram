@@ -33,7 +33,7 @@ module RedisToTelegram
 
     # @return [String] string of message
     def to_s
-      "`Message: #{@text}` "\
+      "`Message: #{@text}` " \
         "`To Chat: #{@chat_id}`"
     end
   end
