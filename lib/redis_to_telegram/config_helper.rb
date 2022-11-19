@@ -10,7 +10,7 @@ module RedisToTelegram
     end
 
     # @return [Hash] Parsed config data
-    def config
+    def data
       YAML.load_file(@path)
     end
   end

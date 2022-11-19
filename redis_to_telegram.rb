@@ -8,7 +8,7 @@ module RedisToTelegram
   config = ConfigHelper.new
   redis_message_fetcher = RedisMessageFetcher.new(config: config)
 
-  Telegram::Bot::Client.run(config['telegram_bot_token'],
+  Telegram::Bot::Client.run(config.data['telegram_bot_token'],
                             logger: Logger.new($stdout)) do |bot|
     loop do
       sleep 30
