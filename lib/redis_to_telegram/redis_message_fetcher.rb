@@ -44,7 +44,7 @@ module RedisToTelegram
     # @param chat_name [String] name of chat
     # @return [String] id of chat
     def fetch_chat_id(chat_name)
-      @config.config[chat_name]
+      @config.data[chat_name]
     end
   end
 end
