@@ -5,7 +5,7 @@ require 'spec_helper'
 describe RedisToTelegram::RedisMessageFetcher do
   let(:config) { RedisToTelegram::ConfigHelper.new('spec/data/fake_config.yml') }
   let(:redis_message_fetcher) { described_class.new(config: config) }
-  let(:messages) {  redis_message_fetcher.fetch_messages }
+  let(:messages) { redis_message_fetcher.fetch_messages }
 
   it 'return empty array for empty redis connection' do
     expect(redis_message_fetcher.fetch_messages).to eq([])
