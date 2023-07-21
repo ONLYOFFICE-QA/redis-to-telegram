@@ -66,7 +66,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
-    rubocop (1.54.1)
+    rubocop (1.54.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -120,4 +120,4 @@ DEPENDENCIES
   telegram-bot-ruby
 
 BUNDLED WITH
-   2.3.26
+   2.4.17
