@@ -4,9 +4,8 @@
 
 ### New Features
 
+* Move application to `ruby-3.3`
 * Add `dependabot` support for Docker base image
-* Update base image and tests to ruby 3.0.2
-* Add `ruby-3.1` to CI
 * Send all messages in queue instantly
   (Fix [#24](https://github.com/ONLYOFFICE-QA/redis-to-telegram/issues/24))
 * Add basic spec suite with 100% coverage
@@ -20,9 +19,9 @@
 
 ### Changes
 
-* Remove `ruby-2.7` fro CI
 * Check `dependabot` at 8:00 Moscow time daily
 * Fix `rubocop-1.28.1` code issues
+* Have only one stable version of ruby in CI and next
 
 ## 1.0.0 (2020-12-24)
 
