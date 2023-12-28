@@ -11,6 +11,7 @@
 * Add basic spec suite with 100% coverage
 * Check in CI that 100% code is covered with tests
 * Add `yamllint` check in CI
+* Add `dependabot` check for `GitHub Actions`
 
 ### Fixes
 
