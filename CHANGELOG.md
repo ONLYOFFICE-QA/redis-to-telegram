@@ -12,6 +12,7 @@
 * Check in CI that 100% code is covered with tests
 * Add `yamllint` check in CI
 * Add `dependabot` check for `GitHub Actions`
+* Add Docker build check in GitHub CI
 
 ### Fixes
 
