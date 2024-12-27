@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+ruby '>= 3.4.0'
+
 gem 'redis'
 gem 'telegram-bot-ruby'
 

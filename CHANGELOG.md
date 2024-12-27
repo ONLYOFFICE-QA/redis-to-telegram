@@ -4,7 +4,7 @@
 
 ### New Features
 
-* Move application to `ruby-3.3`
+* Move application to `ruby-3.4`
 * Add `dependabot` support for Docker base image
 * Send all messages in queue instantly
   (Fix [#24](https://github.com/ONLYOFFICE-QA/redis-to-telegram/issues/24))
