@@ -18,6 +18,7 @@
 
 * Fix `markdownlint` failure because of old `nodejs` in CI
 * Fix config read after some refactoring
+* Run `rubocop` in CI through `bundle exec`
 
 ### Changes
 
