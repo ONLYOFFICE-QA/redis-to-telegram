@@ -1,4 +1,4 @@
-FROM ruby:3.4.2-alpine
+FROM ruby:3.4.3-alpine
 
 RUN apk --no-cache add gcc \
                        make \
